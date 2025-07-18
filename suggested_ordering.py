@@ -115,13 +115,6 @@ def main():
     print("Flow: Low energy → Mid energy → Language-specific → High energy → Peak")
     print(formatted_output)
     
-    # Also save to file
-    with open('suggested_playlist.txt', 'w', encoding='utf-8') as f:
-        f.write("SUGGESTED DJ ORDERING\n")
-        f.write("=" * 50 + "\n")
-        f.write("Flow: Low energy → Mid energy → Language-specific → High energy → Peak\n")
-        f.write(formatted_output)
-    
     # Count genres in suggested order
     genre_counts = {}
     for song in suggested_songs:
@@ -129,7 +122,6 @@ def main():
         genre_counts[genre] = genre_counts.get(genre, 0) + 1
     
     print(f"\nSuggested ordering groups {len(genre_counts)} genres")
-    print("Output saved to suggested_playlist.txt")
 
 if __name__ == "__main__":
     main()

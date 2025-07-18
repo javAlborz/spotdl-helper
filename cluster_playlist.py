@@ -125,14 +125,7 @@ def main():
     print("=" * 50)
     print(formatted_output)
     
-    # Also save to file
-    with open('clustered_playlist.txt', 'w', encoding='utf-8') as f:
-        f.write("PLAYLIST CLUSTERED BY GENRE\n")
-        f.write("=" * 50 + "\n")
-        f.write(formatted_output)
-    
     print(f"\n\nGenerated {len(clusters)} genre clusters from {len(songs)} songs")
-    print("Output saved to clustered_playlist.txt")
 
 if __name__ == "__main__":
     main()
