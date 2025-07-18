@@ -1,0 +1,16 @@
+# Virtual environment
+spotify_env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Spotify data files
+*.spotdl
+*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
